@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopping Bag · CLOTHINA</title>
+<link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/brand/favicon.png">
+<link rel="preload" as="image" href="assets/img/brand/clothina-wordmark-white.png">
+<link rel="preconnect" href="https://ymsrfxmwwpwjgzzaytsh.supabase.co" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="cart">
+
+<div id="site-header"></div>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <nav class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span>Bag</span></nav>
+      <div class="section-head" style="margin-bottom:0">
+        <div class="stack">
+          <span class="eyebrow">YOUR BAG</span>
+          <h1 class="title-lg">Shopping bag</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cart-wrap" id="cartWrap">
+        <!-- Item list -->
+        <div>
+          <div class="cart-list" id="cartList"></div>
+          <div id="cartEmpty" class="empty hide">
+            <b>Your bag is empty</b>
+            <span class="tiny">No pieces in your bag yet. Find something you love.</span>
+            <a class="btn btn--ghost btn--sm" href="shop.html">Shop now</a>
+          </div>
+          <a class="link-u mt-3" href="shop.html" style="display:inline-flex">Continue shopping <span class="en">→</span></a>
+        </div>
+
+        <!-- Order summary -->
+        <aside class="summary" id="summaryBox">
+          <h3>Order summary</h3>
+          <div class="sum-row"><span>Subtotal</span><b id="sumSub">—</b></div>
+          <div class="sum-row"><span>Delivery</span><b id="sumShip">—</b></div>
+
+          <div class="sum-row sum-discount hide" id="discountRow">
+            <span>Coupon discount <b class="en" id="sumCouponCode"></b></span><b id="sumDiscount">—</b>
+          </div>
+
+          <!-- Coupon / Discount -->
+          <div class="coupon-block" id="couponBlock"></div>
+
+          <div class="sum-row sum-total"><span>Total</span><b id="sumTotal">—</b></div>
+          <button class="btn btn--block" id="goCheckout">Checkout</button>
+          <p class="hint"><span class="dot"></span> Your order will be confirmed on WhatsApp after checkout.</p>
+          <p class="hint"><span class="dot"></span> A 50% deposit is paid via Vodafone Cash; the balance is due on delivery.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script defer src="assets/js/config.js"></script>
+<script defer src="assets/js/env.js"></script>
+<script defer src="assets/js/core.js"></script>
+<script defer src="assets/js/cart.page.js"></script>
+</body>
+</html>
